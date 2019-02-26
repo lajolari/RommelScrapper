@@ -1,0 +1,27 @@
+Script de busqueda para la pagina: http://agenteinmobiliario.vivienda.gob.pe/AgentesInmobiliarios.aspx.
+Crea CSV con listas que contienen los valores "nombre" y "correo"
+
+Probado exitosamente hasta 50 iteraciones (500 resultados, con algunos duplicados)
+
+Para Instalar el Programa:
+Descomprimir el .rar en una carpeta de facil acceso.
+
+Para iniciar el programa:
+1. Abrir la consola de comandos (windows + R y luego escribir cmd en el cuadro de ejecutar).
+2. Escribir en la consola cd ruta\donde\descomprimiste\Rommel (es importante el "\", no es lo mismo que el "/")
+3. Escribir: venv\Scripts\activate
+4. Escribir: cd webscrapping-main
+5. Escribir: py scrapper.py 
+
+Para modificar la cantidad de clientes que quieras obtener:
+
+1. Abrir archivo scrapper.py con editor de texto preferido (recomendado, block de notas).
+2. Buscar en la linea 19 el siguiente texto:
+	for k in range(100):
+3. Modificar el (100) por el valor deseado. 
+
+Es importante recordar que una (1) unidad de busqueda (los numeros dentro del parentesis) arroja hasta 10 usuarios.
+Entonces: 
+    for k in range(100):  <- 1000 resultados
+    for k in range(54): <- 540 resultados
+    y asi.
