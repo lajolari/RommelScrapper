@@ -51,9 +51,11 @@ class PythonOrgSearch(unittest.TestCase):
                 killmonger = driver.find_element_by_xpath("/html/body/form/div[4]/div[3]/div[1]/table/tbody/tr[12]/td/table/tbody/tr/td[12]")
             elif contador3 == 51:
                 killmonger = driver.find_element_by_xpath("/html/body/form/div[4]/div[3]/div[1]/table/tbody/tr[12]/td/table/tbody/tr/td[4]")
+                contador3+=1
                 print('me salte el 51 jiji, voy por el: '+str(contador3))
             elif contador3 == 74:
-                killmonger = driver.find_element_by_xpath("/html/body/form/div[4]/div[3]/div[1]/table/tbody/tr[12]/td/table/tbody/tr/td[5]")
+                killmonger = driver.find_element_by_xpath("/html/body/form/div[4]/div[3]/div[1]/table/tbody/tr[12]/td/table/tbody/tr/td[7]")
+                contador3+=1
             else:
                 killmonger = driver.find_element_by_xpath("/html/body/form/div[4]/div[3]/div[1]/table/tbody/tr[12]/td/table/tbody/tr/td["+str(huachicolero+1)+"]")
                 savior+=1
